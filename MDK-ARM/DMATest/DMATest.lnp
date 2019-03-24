@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"dmatest\startup_stm32f103xb.o"
+"dmatest\main.o"
+"dmatest\stm32f1xx_it.o"
+"dmatest\stm32f1xx_hal_msp.o"
+"dmatest\stm32f1xx_hal_gpio_ex.o"
+"dmatest\stm32f1xx_hal_tim.o"
+"dmatest\stm32f1xx_hal_tim_ex.o"
+"dmatest\stm32f1xx_hal_uart.o"
+"dmatest\stm32f1xx_hal.o"
+"dmatest\stm32f1xx_hal_rcc.o"
+"dmatest\stm32f1xx_hal_rcc_ex.o"
+"dmatest\stm32f1xx_hal_gpio.o"
+"dmatest\stm32f1xx_hal_dma.o"
+"dmatest\stm32f1xx_hal_cortex.o"
+"dmatest\stm32f1xx_hal_pwr.o"
+"dmatest\stm32f1xx_hal_flash.o"
+"dmatest\stm32f1xx_hal_flash_ex.o"
+"dmatest\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "DMATest\DMATest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DMATest.map" -o DMATest\DMATest.axf
